@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo Optional argument: ${1:-foo}
+
+echo Hello, who am I talking to?
+read varname
+echo It\'s nice to meet you $varname
+
+printf "This is not"
+printf "a new line"

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Cloning p5 boiler plate code to current directory"
+git clone https://github.com/zachcristol/P5js-boiler-plate.git
+
+echo "Removing git repository"
+cd P5js-boiler-plate
+rm -rf .git
+cd ..
+
+printf "  What would you like the repository name to be?\n  ↳  "
+read repoName
+
+echo Renaming repository to $repoName
+mv P5js-boiler-plate $repoName
+
+echo Have fun processing 👾🤖🧠
+cd $repoName
